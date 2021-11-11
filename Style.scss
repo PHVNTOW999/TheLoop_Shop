@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #212121;
+}
+
+.btn {
+    width: 220px;
+    height: 55px;
+    background: #D7B399;
+    &__title {
+        text-align: center;
+        line-height: 55px;
+    }
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1110px;
+}
+
+header {
+    height: 800px;
+
+    .nav {
+        margin-top: 50px;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+            width: 375px;
+            // height: 17px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            float: left;
+
+            .item {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.03em;
+
+                a {
+                    line-height: 40px;
+                }
+
+                img {
+                    margin: 0 0 3px 5px;
+                }
+            }
+        }
+
+        .logo {
+            margin: 0 auto;
+            width: 201px;
+            height: 40px;
+
+            &__title {
+                margin-top: 6px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 29px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                float: right;
+            }
+        }
+
+        .info {
+            width: 355px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            float: right;
+
+            .info__text {
+                width: 163px;
+                height: 40px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.03em;
+
+                a {
+                    line-height: 40px;
+                }
+            }
+
+            .basket {
+                width: 91px;
+                height: 40px;
+
+                img {
+                    margin: 5px 15px 0 0;
+                }
+
+                .basket__num {
+                    margin-top: 13px;
+                    width: 45px;
+                    height: 17px;
+                    background-color: #D7B399;
+                    float: right;
+                    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+
+                    span {
+                        width: 33px;
+                        text-align: center;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-align: center;
+                        letter-spacing: 0.03em;
+                        color: #FFFFFF;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .header__content {
+        margin: 126px 0 70px 0;
+        width: 1110px;
+        height: 514px;
+
+        .slide {
+            width: 100%;
+            height: 377px;
+
+            &__info {
+                width: 550px;
+                height: 224px;
+                float: left;
+
+                &__title {
+                    padding-top: 34px;
+                    width: 335px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 37px;
+                    letter-spacing: 0.02em;
+                    color: #000000;
+                }
+
+                &__disc {
+                    padding-top: 26px;
+                    width: 570px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 55px;
+                    line-height: 67px;
+                    letter-spacing: 0.04em;
+                    color: #000000;
+                }
+
+                &__btn {
+                    margin-top: 39px;
+                    width: 240px;
+                    float: left;
+                }
+            }
+
+            &__img {
+                width: 556px;
+                height: 377px;
+                float: right;
+
+                &__prices {
+                    position: relative;
+                    width: 163px;
+                    height: 94px;
+                    bottom: 341px;
+                    right: 3px;
+                    float: right;
+
+                    .prices__disc {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 24px;
+                        line-height: 29px;
+                        text-align: right;
+                        letter-spacing: 0.05em;
+                        text-decoration-line: line-through;
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+
+                    .prices__now {
+                        position: relative;
+                        top: 15px;
+                        left: 8px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 42px;
+                        line-height: 51px;
+                        text-align: right;
+                        letter-spacing: 0.02em;
+                        text-transform: uppercase;
+                        color: #D84033;
+                    }
+                }
+            }
+        }
+        .slider {
+            margin: 0 auto;
+            margin-top: 130px;
+            width: 205px;
+            height: 7px;
+            display: flex;
+            justify-content: space-between;
+            &__item {
+                width: 40px;
+                height: 7px;
+                transition-duration: 0.2s;
+                cursor: pointer;
+                background: #CECECE;
+                &-active {
+                    background: #D7B399;
+                }
+            }
+            &__item:hover {
+                background: #D7B399;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+}
