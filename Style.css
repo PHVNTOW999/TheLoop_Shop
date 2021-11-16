@@ -138,16 +138,16 @@ header .header__content {
   width: 1110px;
   height: 514px;
 }
-header .header__content .slide {
+header .header__content .sliderTrack .slide {
   width: 100%;
   height: 377px;
 }
-header .header__content .slide__info {
+header .header__content .sliderTrack .slide__info {
   width: 550px;
   height: 224px;
   float: left;
 }
-header .header__content .slide__info__title {
+header .header__content .sliderTrack .slide__info__title {
   padding-top: 34px;
   width: 335px;
   font-family: Montserrat;
@@ -158,7 +158,7 @@ header .header__content .slide__info__title {
   letter-spacing: 0.02em;
   color: #000000;
 }
-header .header__content .slide__info__disc {
+header .header__content .sliderTrack .slide__info__disc {
   padding-top: 26px;
   width: 570px;
   font-family: Montserrat;
@@ -169,17 +169,17 @@ header .header__content .slide__info__disc {
   letter-spacing: 0.04em;
   color: #000000;
 }
-header .header__content .slide__info__btn {
+header .header__content .sliderTrack .slide__info__btn {
   margin-top: 39px;
   width: 240px;
   float: left;
 }
-header .header__content .slide__img {
+header .header__content .sliderTrack .slide__img {
   width: 556px;
   height: 377px;
   float: right;
 }
-header .header__content .slide__img__prices {
+header .header__content .sliderTrack .slide__img__prices {
   position: relative;
   width: 163px;
   height: 94px;
@@ -187,7 +187,7 @@ header .header__content .slide__img__prices {
   right: 3px;
   float: right;
 }
-header .header__content .slide__img__prices .prices__disc {
+header .header__content .sliderTrack .slide__img__prices .prices__disc {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -200,7 +200,7 @@ header .header__content .slide__img__prices .prices__disc {
   text-transform: uppercase;
   color: #000000;
 }
-header .header__content .slide__img__prices .prices__now {
+header .header__content .sliderTrack .slide__img__prices .prices__now {
   position: relative;
   top: 15px;
   left: 8px;
@@ -336,12 +336,29 @@ header .header__content .slider__item:hover {
   height: 30px;
   background-color: #D7B399;
   position: absolute;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   float: left;
 }
 .clothes__collections__block .block__btn img {
   margin: 12px 0 0 30px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.clothes__collections__block .block__btn:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.clothes__collections__block .block__btn:hover img {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 .clothes__collections__block .block__img {
+  margin-right: 2px;
   width: 190px;
   height: 100%;
   float: right;
@@ -349,4 +366,69 @@ header .header__content .slider__item:hover {
 .clothes__collections__block .block__img img {
   margin-top: 80px;
   position: relative;
+}
+.clothes__dresses {
+  width: 1110px;
+  height: 472px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 277px 277px 277px 277px;
+  grid-template-columns: 277px 277px 277px 277px;
+  -ms-grid-rows: 236px 236px;
+  grid-template-rows: 236px 236px;
+}
+.clothes__dresses > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.clothes__dresses > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+.clothes__dresses > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.clothes__dresses > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+.clothes__dresses > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+.clothes__dresses > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+.clothes__dresses > *:nth-child(7) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+.clothes__dresses > *:nth-child(8) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+}
+.clothes__dresses .dresses__item {
+  width: 277px;
+  height: 236px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+.clothes__dresses .dresses__item__title {
+  position: absolute;
+  margin: 190px 0 0 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.clothes__dresses .dresses__item:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
