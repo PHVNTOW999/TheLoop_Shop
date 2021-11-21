@@ -42,6 +42,7 @@
             height: 350px;
             text-align: center;
             transition-duration: 0.4s;
+            background-image: url(FRAME.svg);
 
             &__img {
                 margin-top: 25px;
@@ -91,11 +92,37 @@
     width: 220px;
     height: 55px;
     background: #D7B399;
+    transition-duration: 0.4s;
 
     &__title {
+        transition-duration: 0.4s;
         text-align: center;
         line-height: 55px;
         color: #FFFFFF;
+    }
+}
+
+.btn:hover {
+    transition-duration: 0.4s;
+    transform: scale(0.8);
+}
+
+// logo
+
+.logo {
+    width: 201px;
+    height: 40px;
+
+    &__title {
+        margin-top: 6px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        float: right;
     }
 }
 
@@ -136,24 +163,6 @@ header {
                 img {
                     margin: 0 0 3px 5px;
                 }
-            }
-        }
-
-        .logo {
-            margin: 0 auto;
-            width: 201px;
-            height: 40px;
-
-            &__title {
-                margin-top: 6px;
-                font-family: Montserrat;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 24px;
-                line-height: 29px;
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-                float: right;
             }
         }
 
@@ -223,6 +232,7 @@ header {
             .slide {
                 width: 100%;
                 height: 377px;
+                display: none;
 
                 &__info {
                     width: 550px;
@@ -302,6 +312,9 @@ header {
                         }
                     }
                 }
+            }
+            .slide-activ {
+                display: block;
             }
         }
 
@@ -529,7 +542,7 @@ header {
             width: 252px;
             height: 37px;
             outline: none;
-            
+
             input[type="email"] {
                 margin-left: 20px;
                 font-family: Montserrat;
@@ -555,6 +568,105 @@ header {
                 line-height: 40px;
                 text-align: center;
                 color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 159px;
+    width: 100%;
+    height: 311px;
+    background-color: #212121;
+
+    &__content {
+        margin: 0 auto;
+        padding-top: 73px;
+        width: 1116px;
+        height: 160px;
+    }
+
+    &__desc {
+        width: 201px;
+        height: 160px;
+        float: left;
+
+        .desc__text {
+            margin-top: 30px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+    }
+
+    &__nav {
+        width: 692px;
+        height: 156px;
+        display: flex;
+        justify-content: space-between;
+        float: right;
+
+        &__ul {
+            width: 137px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav__ul__title {
+            margin: 8px 0 20px 0;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 12px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+
+        .nav__ul__link {
+            margin-top: 10px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            transition-duration: 0.2s;
+            color: #CBCFD4;
+        }
+
+        .nav__ul__link:hover {
+            transition-duration: 0.2s;
+            transform: scale(1.1);
+            color: #fff;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 106px;
+        width: 100%;
+        height: 47px;
+        background-color: #fff;
+
+        &__text {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 22px;
+                color: #212121;
             }
         }
     }

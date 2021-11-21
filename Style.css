@@ -42,6 +42,7 @@
   text-align: center;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  background-image: url(FRAME.svg);
 }
 .newModels__items .model__img {
   margin-top: 25px;
@@ -83,11 +84,38 @@
   width: 220px;
   height: 55px;
   background: #D7B399;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 .btn__title {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   text-align: center;
   line-height: 55px;
   color: #FFFFFF;
+}
+
+.btn:hover {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.logo {
+  width: 201px;
+  height: 40px;
+}
+.logo__title {
+  margin-top: 6px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  float: right;
 }
 
 .wrapper {
@@ -133,22 +161,6 @@ header .nav .menu .item a {
 }
 header .nav .menu .item img {
   margin: 0 0 3px 5px;
-}
-header .nav .logo {
-  margin: 0 auto;
-  width: 201px;
-  height: 40px;
-}
-header .nav .logo__title {
-  margin-top: 6px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  float: right;
 }
 header .nav .info {
   width: 355px;
@@ -211,6 +223,7 @@ header .header__content {
 header .header__content .sliderTrack .slide {
   width: 100%;
   height: 377px;
+  display: none;
 }
 header .header__content .sliderTrack .slide__info {
   width: 550px;
@@ -283,6 +296,9 @@ header .header__content .sliderTrack .slide__img__prices .prices__now {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #D84033;
+}
+header .header__content .sliderTrack .slide-activ {
+  display: block;
 }
 header .header__content .slider {
   margin: 0 auto;
@@ -556,4 +572,112 @@ header .header__content .slider__item:hover {
   line-height: 40px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.footer {
+  margin-top: 159px;
+  width: 100%;
+  height: 311px;
+  background-color: #212121;
+}
+.footer__content {
+  margin: 0 auto;
+  padding-top: 73px;
+  width: 1116px;
+  height: 160px;
+}
+.footer__desc {
+  width: 201px;
+  height: 160px;
+  float: left;
+}
+.footer__desc .desc__text {
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.footer__nav {
+  width: 692px;
+  height: 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  float: right;
+}
+.footer__nav__ul {
+  width: 137px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer__nav .nav__ul__title {
+  margin: 8px 0 20px 0;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.footer__nav .nav__ul__link {
+  margin-top: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  color: #CBCFD4;
+}
+.footer__nav .nav__ul__link:hover {
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff;
+}
+.footer__nav .nav__ul__link:hover img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+.footer .copyright {
+  margin-top: 106px;
+  width: 100%;
+  height: 47px;
+  background-color: #fff;
+}
+.footer .copyright__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .copyright__text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #212121;
 }
