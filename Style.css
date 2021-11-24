@@ -42,7 +42,7 @@
   text-align: center;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-  background-image: url(FRAME.svg);
+  background-image: url(../IMG/FRAME.svg);
 }
 .newModels__items .model__img {
   margin-top: 25px;
@@ -262,9 +262,13 @@ header .header__content .sliderTrack .slide__img {
   height: 377px;
   float: right;
 }
+header .header__content .sliderTrack .slide__img img {
+  max-width: 556px;
+  max-height: 377px;
+}
 header .header__content .sliderTrack .slide__img__prices {
   position: relative;
-  width: 163px;
+  width: 100%;
   height: 94px;
   bottom: 341px;
   right: 3px;
@@ -286,7 +290,6 @@ header .header__content .sliderTrack .slide__img__prices .prices__disc {
 header .header__content .sliderTrack .slide__img__prices .prices__now {
   position: relative;
   top: 15px;
-  left: 8px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -296,8 +299,9 @@ header .header__content .sliderTrack .slide__img__prices .prices__now {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #D84033;
+  float: right;
 }
-header .header__content .sliderTrack .slide-activ {
+header .header__content .sliderTrack .slide-active {
   display: block;
 }
 header .header__content .slider {
