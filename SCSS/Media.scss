@@ -1,0 +1,426 @@
+@media (max-width: 1199px) {
+    .newModels {
+        margin: 80px 0 50px 0;
+        width: 100%;
+
+        &__items {
+            margin: 70px 0 70px 0;
+
+            .model {
+                width: 235px;
+                height: 322px;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                transform: scale(0.8);
+            }
+
+            .model:hover {
+                transition-duration: 0.4s;
+                transform: scale(0.6);
+            }
+        }
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+
+    // logo
+
+    .logo {
+        width: 151px;
+
+        &__title {
+            font-size: 17px;
+        }
+    }
+
+    // wrapper
+
+    .wrapper {
+        padding: 0 20px 0 20px;
+        width: 940px;
+    }
+
+    header {
+        height: 550px;
+
+        .nav {
+
+            .menu {
+                width: 320px;
+            }
+
+            .info {
+                width: 320px;
+
+                .info__text {
+                    width: 175px;
+                }
+
+                .basket {
+
+                    img {
+                        margin: 5px 15px 0 0;
+                    }
+                }
+            }
+        }
+
+        .header__content {
+            margin: 60px 0 36px 0;
+            width: 940px;
+            height: 414px;
+
+            .sliderTrack {
+
+                .slide {
+
+                    &__info {
+                        width: 462px;
+
+                        &__disc {
+                            font-size: 47px;
+                        }
+                    }
+
+                    &__img {
+                        width: 475px;
+
+                        img {
+                            max-width: 475px;
+                            max-height: 377px;
+                        }
+
+                        &__prices {
+                            bottom: 320px;
+                        }
+                    }
+                }
+            }
+            
+            .slider {
+                margin-top: 30px;
+                display: flex;
+            }
+        }
+    }
+
+    .clothes {
+        height: 1500px;
+
+        &__collections {
+
+            &__block {
+                width: 470px;
+
+                .block__text {
+                    width: 244px;
+
+                    &__title {
+                        font-size: 20px;
+
+                        span {
+                            font-size: 20px;
+                        }
+                    }
+
+                    &__subtitle {
+                        margin-top: 8px;
+                    }
+                }
+            }
+        }
+
+        &__dresses {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 235px 235px 235px 235px;
+            grid-template-rows: 236px 236px;
+
+            .dresses__item {
+                width: 233px;
+
+                img {
+                    max-width: 100%;
+                    height: 234px;
+                }
+            }
+        }
+    }
+
+    .notice {
+        width: 100%;
+        height: 180px;
+        background-color: #212121;
+
+        .form {
+            width: 100%;
+
+            &__title {
+                font-size: 26px;
+            }
+
+            &__input {
+                margin-left: 30px;
+                width: 198px;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 50px;
+
+        &__content {
+            width: 100%;
+        }
+
+        &__nav {
+
+            &__ul {
+                width: 137px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 999px) {
+    .wrapper {
+        padding: 0 10px 0 10px;
+        width: 600px;
+    }
+
+    // logo
+
+    .logo {
+        max-width: 151px;
+        height: 40px;
+    }
+
+    .newModels {
+        height: 838px;
+
+        &__items {
+            height: 600px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 300px 300px;
+
+            .model {
+                margin: 0 auto;
+            }
+        }
+
+        &__btn {
+            margin: 0 auto;
+
+            img {
+                margin: 0 0 1px 16px;
+            }
+        }
+    }
+
+    header {
+        height: 785px;
+
+        .nav {
+            height: 80px;
+            display: grid;
+            grid-template-columns: 35% 65%;
+            grid-template-rows: 40px 40px;
+
+            .menu {
+                width: 100%;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+
+            .logo {
+                grid-column-start: 1;
+                grid-row-start: 1;
+            }
+
+            .info {
+                width: 100%;
+                display: flex;
+                grid-row-start: 1;
+
+                .info__text {
+                    width: 200px;
+                }
+              
+            }
+        }
+
+        .header__content {
+            margin: 0;
+            width: 600px;
+            height: 644px;
+
+            .sliderTrack {
+
+                .slide {
+                    width: 600px;
+                    height: 605px;
+                    display: none;
+
+                    &__info {
+                        width: 100%;
+
+                        &__title {
+                            text-align: center;
+                            width: 100%;
+                        }
+
+                        &__disc {
+                            text-align: center;
+                            width: 100%;
+                        }
+
+                        &__btn {
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            margin-top: 39px;
+                        }
+                    }
+
+                    &__img {
+                        width: 100%;
+
+                        img {
+                            max-width: 556px;
+                            max-height: 377px;
+                        }
+                    }
+                }
+
+                .slide-active {
+                    display: block;
+                }
+            }
+
+            .slider {
+                margin-top: 60pX;
+            }
+        }
+    }
+
+    .clothes {
+        height: 2558px;
+
+        &__collections {
+            height: 390px;
+            max-height: 390px;
+
+            &__block {
+                height: 350px;
+
+                .block__text {
+                    position: absolute;
+                    margin: 240px 0 0 20px;
+                }
+
+                .block__btn {
+                    margin: 320px 0 0 20px;
+                }
+
+                .block__img {
+                    margin-right: 0px;
+                    width: 190px;
+                    height: 171px;
+                    float: none;
+
+                    img {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        &__dresses {
+            height: 1200px;
+            display: grid;
+            grid-template-columns: 300px 300px;
+            grid-template-rows: 300px 300px 300px 300px;
+
+            .dresses__item {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .notice {
+
+        .form {
+            padding-top: 50px;
+            height: 80px;
+
+            &__title {
+                width: 100%;
+                font-size: 31px;
+            }
+
+            &__input {
+                margin-left: 0px;
+                width: 404px;
+            }
+        }
+    }
+
+    .footer {
+        height: 500px;
+
+        &__content {
+            height: 320px;
+        }
+
+        &__nav {
+            width: 300px;
+            height: 350px;
+            display: grid;
+            grid-template-columns: 150px 150px;
+            grid-template-rows: 160px 160px;
+            grid-row-gap: 30px;
+
+            &__ul {
+                width: 137px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav__ul__link:hover {
+                transition-duration: 0.2s;
+                transform: scale(1.1);
+                color: #fff;
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        .copyright {
+            margin-top: 60px;
+
+            &__text {
+                p {
+                    line-height: 47px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Animate css (Library) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="Style.css">
+    <title>The Loop</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item item"><a href="#">Для мужчин<img src="li_polygon.svg" alt=""></a></li>
+                    <li class="menu__item item"><a href="#">Для женщин<img src="li_polygon.svg" alt=""></a></li>
+                    <li class="menu__item item"><a href="#">Для детей<img style="position: relative; bottom: 6px"
+                                src="li_polygon.svg" alt=""></a></li>
+                </ul>
+                <a href="#">
+                    <div class="logo">
+                        <img class="logo__img" src="Logo.svg" alt="">
+                        <div class="logo__title">THE LOOP</div>
+                    </div>
+                </a>
+                <div class="info">
+                    <div class="info__text">
+                        <p class="text__item item" style="float: left;"><a href="#">Оплата</a></p>
+                        <p class="text__item item" style="float: right;"><a href="#">Доставка</a></p>
+                    </div>
+                    <div class="basket">
+                        <a href="#"><img src="Basket.svg" alt=""></a>
+                        <a href="#">
+                            <div class="basket__num"><span>5</span></div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__content">
+                <div class="sliderTrack">
+                    <div class="slide slide-active animate__animated animate__fadeIn" id="slide_1">
+                        <div class="slide__info">
+                            <div class="slide__info__title">Зимняя распродажа</div>
+                            <div class="slide__info__disc">СКИДКИ ДО 70%</div>
+                            <a href="#">
+                                <div class="slide__info__btn btn">
+                                    <p class="btn__title">СМОТРЕТЬ МОДЕЛИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide__img">
+                            <img src="slide_img_1.png" alt="">
+                            <div class="slide__img__prices">
+                                <div class="prices__disc">6 900 ₽</div>
+                                <div class="prices__now">2 500 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide animate__animated animate__fadeIn" id="slide_2">
+                        <div class="slide__info">
+                            <div class="slide__info__title">Зимняя распродажа</div>
+                            <div class="slide__info__disc">СКИДКИ ДО 90%</div>
+                            <a href="#">
+                                <div class="slide__info__btn btn">
+                                    <p class="btn__title">СМОТРЕТЬ МОДЕЛИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide__img">
+                            <img src="slide_img_2.png" alt="">
+                            <div class="slide__img__prices">
+                                <div class="prices__disc">9 900 ₽</div>
+                                <div class="prices__now">1 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide animate__animated animate__fadeIn" id="slide_3">
+                        <div class="slide__info">
+                            <div class="slide__info__title">Зимняя распродажа</div>
+                            <div class="slide__info__disc">СКИДКИ ДО 50%</div>
+                            <a href="#">
+                                <div class="slide__info__btn btn">
+                                    <p class="btn__title">СМОТРЕТЬ МОДЕЛИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide__img">
+                            <img src="slide_img_3.png" alt="">
+                            <div class="slide__img__prices">
+                                <div class="prices__disc">22 900 ₽</div>
+                                <div class="prices__now">10 900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide animate__animated animate__fadeIn" id="slide_4">
+                        <div class="slide__info">
+                            <div class="slide__info__title">Зимняя распродажа</div>
+                            <div class="slide__info__disc">СКИДКИ ДО 5%</div>
+                            <a href="#">
+                                <div class="slide__info__btn btn">
+                                    <p class="btn__title">СМОТРЕТЬ МОДЕЛИ</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slide__img">
+                            <img src="slide_img_4.png" alt="">
+                            <div class="slide__img__prices">
+                                <div class="prices__disc">1 900 ₽</div>
+                                <div class="prices__now">1 705 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider">
+                    <span class="slider__item slider__item-active" id="slideItem_1"></span>
+                    <span class="slider__item" id="slideItem_2"></span>
+                    <span class="slider__item" id="slideItem_3"></span>
+                    <span class="slider__item" id="slideItem_4"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="delivery">
+        <div class="delivery__text">
+            <h1 class="text__title">БЕСПЛАТНАЯ ДОСТАВКА <span>ОТ 3000₽</span></h1>
+            <p class="text__subtitle">Сделайте заказ и получите подарок!</p>
+        </div>
+    </section>
+    <div class="clothes">
+        <div class="wrapper">
+            <div class="clothes__collections">
+                <div class="clothes__collections__block">
+                    <div class="block__text">
+                        <h1 class="block__text__title">МУЖСКАЯ <span>КОЛЛЕКЦИЯ</span></h1>
+                        <p class="block__text__subtitle">Обувь, полуверы, костюмы</p>
+                    </div>
+                    <a href="#">
+                        <div class="block__btn"><img src="Arrow.svg" alt=""></div>
+                    </a>
+                    <div class="block__img"><img src="men.png" alt=""></div>
+                </div>
+                <div class="clothes__collections__block">
+                    <div class="block__text">
+                        <h1 class="block__text__title">ЖЕНСКАЯ <span>КОЛЛЕКЦИЯ</span></h1>
+                        <p class="block__text__subtitle">Обувь, полуверы, костюмы</p>
+                    </div>
+                    <a href="#">
+                        <div class="block__btn"><img src="Arrow.svg" alt=""></div>
+                    </a>
+                    <div class="block__img"><img src="women.png" alt=""></div>
+                </div>
+            </div>
+            <div class="clothes__dresses">
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="dresses__item">
+                        <h1 class="dresses__item__title">ПЛАТЬЯ</h1>
+                        <img src="dress.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="newModels">
+                <h1 class="newModels__title">Новые модели</h1>
+                <div class="newModels__items">
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="newModels__btn btn">
+                        <p class="btn__title">ВСЕ МОДЕЛИ<img src="Arrow.svg" alt=""></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="notice">
+        <div class="wrapper">
+            <form class="form" action="#" method="post">
+                <h1 class="form__title">ПОЛУЧАЙТЕ СКИДКИ И ПОДАРКИ</h1>
+                <input id="form__input" class="form__input" placeholder="Ваш e-mail" type="email" name="email">
+                <a href="#">
+                    <div class="form__btn btn">
+                        <p class="form__btn__title btn__title" id="form__btn">ПОДПИСАТЬСЯ</p>
+                    </div>
+                </a>
+            </form>
+        </div>
+    </section>
+    <div class="discount">
+        <div class="wrapper">
+            <div class="newModels">
+                <h1 class="newModels__title">СКИДКИ ДО 90%</h1>
+                <div class="newModels__items">
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="model">
+                            <img class="model__img" src="model.png" alt="">
+                            <p class="model__name">Коктейльное<br>платье</p>
+                            <p class="model__price">₽ 40 000</p>
+                        </div>
+                    </a>
+                </div>
+                <a href="#">
+                    <div class="newModels__btn btn">
+                        <p class="btn__title">ВСЕ МОДЕЛИ<img src="Arrow.svg" alt=""></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__desc">
+                    <a href="#">
+                        <div class="logo">
+                            <img class="logo__img" src="Logo.svg" alt="">
+                            <div class="logo__title" style="color: #FFFFFF;">THE LOOP</div>
+                        </div>
+                    </a>
+                    <p class="desc__text">
+                        Lorem ipsum dolor sit amet,<br>
+                        consectetur adipiscing elit.<br>
+                        Nulla faucibus egestas elit,<br>
+                        at eleifend elit ornare ut.<br>
+                    </p>
+                </div>
+                <div class="footer__nav">
+                    <ul class="nav__ul">
+                        <h1 class="nav__ul__title">Основные ссылки</h1>
+                        <a href="#">
+                            <li class="nav__ul__link">О компании</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Каталог</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Доставка</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Оплата</li>
+                        </a>
+                    </ul>
+                    <ul class="nav__ul">
+                        <h1 class="nav__ul__title">Категории</h1>
+                        <a href="#">
+                            <li class="nav__ul__link">Мужская одежда</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Женская одежда</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Детская одежда</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Для животных</li>
+                        </a>
+                    </ul>
+                    <ul class="nav__ul">
+                        <h1 class="nav__ul__title">ПОЛЕЗНЫЕ ССЫЛКИ</h1>
+                        <a href="#">
+                            <li class="nav__ul__link">Таблица размеров</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Блог о моде</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link">Наша миссия</li>
+                        </a>
+                    </ul>
+                    <ul class="nav__ul">
+                        <h1 class="nav__ul__title">СОЦ СЕТИ</h1>
+                        <a href="#">
+                            <li class="nav__ul__link"><img src="vk_icon.png" alt=""> VK.com</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link"><img src="fb_icon.png" alt=""> Facebook</li>
+                        </a>
+                        <a href="#">
+                            <li class="nav__ul__link"><img src="ig_icon.png" alt=""> Instagram</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="wrapper">
+                <div class="copyright__text">
+                    <p>Copyright © 2019. Все права защищены</p>
+                    <p>Политика приватности</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+
+</html>
